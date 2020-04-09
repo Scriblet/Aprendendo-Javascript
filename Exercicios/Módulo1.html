@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>Curso Javascript</title>
+  </head>
+  <body>
+    <script>
+
+      //Exercicio 1
+
+      var endereco = {
+        rua: "Rua dos pinheiros",
+        numero: 1293,
+        bairro: "Centro",
+        cidade: "São Paulo",
+        uf: "SP"
+      };
+      
+    console.log ("O usuário mora em " + endereco.cidade +"/"+ endereco.uf + ", no Bairro " +endereco.bairro +", na rua "+ endereco.rua + " com nº " + endereco.numero);
+    
+    //Exercicio 2
+    
+    var resultado
+
+    function pares(x, y) {
+      for(var i = y; i>= x; i--){
+        if(i % 2 ==0){       
+           console.log(i)               
+}
+        };        
+      };
+    
+    
+    pares(32, 321);
+
+    // Exercício 3
+    var habilidade
+
+    function temHabilidade(skills){
+
+      if (skills.indexOf("Javascript")){
+       return habilidade = true;
+        
+      } else {
+
+       return habilidade = false;
+      };
+    };
+
+    var skills = ["Javascript", "ReactJS", "React Native"];
+
+    temHabilidade(skills);
+
+    console.log(!habilidade);
+
+    //Exercicio 4
+
+    function experiencia(anos) {
+      if ( anos < 1) {
+        return console.log ("O usuário é Iniciante");
+      } else if (1 <= anos && anos < 3) {
+         return console.log ("O usuário é Intermediário");
+      } else if (3 <= anos && anos< 6) {
+         return console.log ("O usuário é Avançado");
+      } else if (anos >= 7) {
+        return console.log ("O usuário é Jedi Master");
+      } else {
+        console.log ("Outro");
+      };
+    };
+
+    var anosEstudo = 7;
+
+    experiencia(anosEstudo);
+    
+    //exercicio 5
+
+    var usuarios = [
+      {
+      nome: "Diego",
+      habilidades: ["Javascript", "ReactJS", "Redux"]
+    },
+    {
+      nome: "Gabriel",
+      habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+    }
+  ]
+  for (var users of usuarios){
+    console.log("O " + users.nome + " possui as habilidades: " + users.habilidades.join(', '));
+  }
+  
+
+    </script>
+  </body>
+</html>
